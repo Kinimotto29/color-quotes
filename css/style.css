@@ -1,0 +1,14 @@
+q, blockquote {
+    quotes: "''" "''";
+}
+q::before,
+blockquote::before {
+    content: open-quote;
+}
+q::after,
+blockquote::after {
+    content: close-quote;
+}
+q:lang(en), blockquote:lang(en) {
+    quotes: "*" "*";
+}
